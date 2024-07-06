@@ -1,1 +1,8 @@
+.venv/
 venv/
+/dep
+*.pdf
+*.docx
+prevCompany.txt
+outputPath.txt
+inputPath.txt
