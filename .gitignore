@@ -6,3 +6,4 @@ venv/
 prevCompany.txt
 outputPath.txt
 inputPath.txt
+.DS_Store
