@@ -2,7 +2,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip3 install --upgrade pip
 
-pip3 install python-docx
+pip3 install -r requirements.txt
 
 touch inputPath.txt
 touch outputPath.txt

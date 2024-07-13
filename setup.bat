@@ -2,11 +2,10 @@
 python -m venv .venv
 
 call .venv\Scripts\activate
-
 python -m pip install --upgrade pip
 
 REM Install required packages
-pip install python-docx
+pip3 install -r requirements.txt
 
 type NUL > inputPath.txt
 type NUL > outputPath.txt
