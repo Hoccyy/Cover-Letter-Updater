@@ -8,21 +8,25 @@ from docx.shared import Pt
 def fetchPrevCompany() -> str:
     with open('prevCompany.txt', 'r') as previous:
         x = previous.read()
+
         if len(x.strip()) < 1:
             newPrevCompany: str = input('Enter current company on cover letter: ')
             changePrevCompany(newPrevCompany.strip())
             return newPrevCompany.strip()
-            
+
         return x.strip()
 
 def get_soffice_path() -> str:
     system = platform.system()
+
     if system == 'Darwin':  # macOS
         return '/Applications/LibreOffice.app/Contents/MacOS/soffice'
+    
     elif system == 'Windows': 
         return r'C:\Program Files\LibreOffice\program\soffice.exe'
     elif system == 'Linux':
         return '/usr/bin/soffice'
+    
     else:
         raise Exception(f'Unsupported operating system: {system}')
 

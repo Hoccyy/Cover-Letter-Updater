@@ -1,6 +1,6 @@
 # Cover Letter Updater
 
-An automated way of updating your ***cover letter*** quickly to format it more efficiently. This app was made with Python, Libreoffice, and python-docx.
+An automated way to update your ***cover letter*** quickly and format it more efficiently. This app was made with Python, Libreoffice, and python-docx.
 
 <br><br>
 
